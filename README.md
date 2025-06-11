@@ -1,30 +1,42 @@
-# Melhorar site
+# 🌾 AgroHelp – Segurança e Apoio no Campo
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+[![Vercel](https://img.shields.io/badge/Deploy-vercel-%2300C7B7?logo=vercel&logoColor=white)](https://agro-help-app.vercel.app)
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/victor-hugo-marchis-projects/v0-melhorar-site)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/k1WTDiD5DfL)
+AgroHelp é um aplicativo web pensado para produtores rurais. Ele oferece uma rede de apoio baseada em localização, focada na comunicação, segurança e colaboração entre vizinhos de propriedades no campo.
 
-## Overview
+## 🔍 Visite o Projeto
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+👉 Acesse: [https://agro-help-app.vercel.app](https://agro-help-app.vercel.app)
 
-## Deployment
+---
 
-Your project is live at:
+## 🧩 Funcionalidades
 
-**[https://vercel.com/victor-hugo-marchis-projects/v0-melhorar-site](https://vercel.com/victor-hugo-marchis-projects/v0-melhorar-site)**
+- 📍 **Mapa Interativo** com propriedades próximas e alertas em tempo real
+- 💬 **Chat comunitário** e privado para comunicação entre produtores
+- 🚨 **Botão de emergência** para situações como roubo, incêndio ou problemas mecânicos
+- 👤 **Perfil do produtor** com dados da propriedade
+- 🌐 **Modo leve**, otimizado para funcionar em áreas com conexão limitada
+- 📱 **Responsivo**: funciona bem em celulares e tablets
 
-## Build your app
+---
 
-Continue building your app on:
+## 🖼️ Telas do Sistema
 
-**[https://v0.dev/chat/projects/k1WTDiD5DfL](https://v0.dev/chat/projects/k1WTDiD5DfL)**
+- Tela de Login
+- Painel com Chamados Abertos
+- Perfil do Produtor
+- Mapa com Google Maps
+- Tela de Conversa e Alertas
 
-## How It Works
+---
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## 🚀 Tecnologias Utilizadas
+
+- **React + TypeScript**
+- **Tailwind CSS**
+- **ShadCN UI**
+- **HTML**
+
+
+
