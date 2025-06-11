@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgroHelp - Segurança e Apoio no Campo</title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f9f7;
+      color: #1f3d16;
+      line-height: 1.6;
+    }
+    a {
+      color: #2a7a27;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #145214;
+    }
+    header {
+      background: #2a7a27;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+    header p {
+      margin: 0.4rem 0 0;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-left: 6px solid #2a7a27;
+      padding-left: 0.5rem;
+    }
+    .hero {
+      background: linear-gradient(135deg, #a6d785, #2a7a27);
+      color: white;
+      padding: 3rem 1rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.35);
+    }
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 0 auto;
+      font-weight: 400;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap: 1.75rem;
+    }
+    .feature-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem 1.5rem 2rem;
+      box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgb(0 0 0 / 0.12);
+    }
+    .feature-icon {
+      font-size: 3.6rem;
+      color: #2a7a27;
+      margin-bottom: 0.7rem;
+    }
+    .feature-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #145214;
+    }
+    .feature-desc {
+      font-weight: 400;
+      color: #2f4f2f;
+    }
+    .usecases-list,
+    .differentials-list {
+      list-style: none;
+      padding-left: 1rem;
+      color: #2f4f2f;
+    }
+    .usecases-list li,
+    .differentials-list li {
+      margin-bottom: 1rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+    .usecases-list li::before,
+    .differentials-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #2a7a27;
+      font-weight: 700;
+    }
+    .tela {
+      margin-bottom: 40px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .tela img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #e2edde;
+      color: #496032;
+      font-size: 0.9rem;
+      border-top: 1px solid #c3d5b7;
+    }
+    @media(max-width: 480px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1.1rem;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .feature-icon {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AgroHelp</h1>
+    <p>Segurança e Apoio no Campo</p>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Introdução AgroHelp">
+      <h2>Conectando produtores rurais com segurança e colaboração</h2>
+      <p>AgroHelp é sua rede de apoio local para comunicação rápida e ajuda mútua no campo, com foco na segurança e colaboração em tempo real.</p>
+    </section>
+
+    <section aria-labelledby="features-title">
+      <h2 id="features-title">Funcionalidades principais</h2>
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon">🗺️</div>
+          <h3 class="feature-title">Mapa Interativo com Geolocalização</h3>
+          <p class="feature-desc">Mostra sua localização atual, propriedades próximas e permite marcar incidentes ou pontos de alerta visíveis a usuários próximos.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3 class="feature-title">Chat Comunitário e Privado</h3>
+          <p class="feature-desc">Converse no chat geral com usuários próximos, crie grupos e envie mensagens privadas.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🚨</div>
+          <h3 class="feature-title">Alertas Rápidos (Botão de Emergência)</h3>
+          <p class="feature-desc">Envie alertas com localização para contatos e usuários próximos em situações como roubo, problema mecânico, ou ajuda médica.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">👤</div>
+          <h3 class="feature-title">Perfil do Usuário e da Propriedade</h3>
+          <p class="feature-desc">Cadastro com dados básicos e informações detalhadas sobre suas propriedades e culturas.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">📶</div>
+          <h3 class="feature-title">Modo Offline ou Com Pouca Internet</h3>
+          <p class="feature-desc">Envie mensagens simplificadas que funcionam em regiões com sinal fraco, garantindo comunicação contínua.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="usecases-title">
+      <h2 id="usecases-title">Casos de Uso Práticos</h2>
+      <ul class="usecases-list">
+        <li>Um produtor com pneu furado envia um alerta e recebe ajuda de um vizinho a 3 km.</li>
+        <li>Movimentação suspeita perto da cerca é avisada a todos num raio de 10 km.</li>
+        <li>Alerta sobre fogo na vegetação se espalha rapidamente entre usuários próximos.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="screens-title">
+      <h2 id="screens-title">Telas do Aplicativo</h2>
+      <div class="tela">
+        <h3>🔐 Tela de Login</h3>
+        <p>O usuário informa seu nome e senha para acessar o AgroHelp. É simples e direto para facilitar o uso em áreas com pouca conectividade.</p>
+        <img src="tela_1.jpg" alt="Tela de Login">
+      </div>
+      <div class="tela">
+        <h3>👤 Tela de Perfil</h3>
+        <p>Mostra informações como nome, idade, localização, tipo de produção, tamanho da propriedade e data de entrada no app.</p>
+        <img src="tela_3.jpg" alt="Tela de Perfil">
+      </div>
+      <div class="tela">
+        <h3>📍 Chamados Abertos</h3>
+        <p>Permite visualizar chamados feitos por outros produtores e abrir um novo caso de alerta.</p>
+        <img src="tela_4.jpg" alt="Chamados Abertos">
+      </div>
+      <div class="tela">
+        <h3>💬 Tela de Conversa</h3>
+        <p>Chat entre usuários, usado para alertas e ajuda mútua em situações diversas, como segurança ou problemas mecânicos.</p>
+        <img src="tela_5.jpg" alt="Tela de Conversa">
+      </div>
+      <div class="tela">
+        <h3>🚨 Notificações de Alerta</h3>
+        <p>Mostra quando alguém emite um alerta importante, como "possível roubo" ou "animal solto".</p>
+        <img src="tela_2.jpg" alt="Notificações de Alerta">
+      </div>
+    </section>
+
+    <section aria-labelledby="differentials-title">
+      <h2 id="differentials-title">Diferenciais</h2>
+      <ul class="differentials-list">
+        <li>Design leve e otimizado para conectividade em zonas rurais com sinal fraco.</li>
+        <li>Comunidade local baseada em confiança, suporte e ajuda mútua.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 AgroHelp. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
